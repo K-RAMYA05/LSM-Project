@@ -3,10 +3,7 @@ const config = {
   port: process.env.PORT || 3000,
   jwtSecret: process.env.JWT_SECRET || "YOUR_secret_key",
   mongoUri: process.env.MONGODB_URI ||'mongodb+srv://Ramya:k01ramya@cluster0.oacjx.mongodb.net/users?retryWrites=true&w=majority'||
-    process.env.MONGO_HOST ||
-    'mongodb://' + (process.env.IP || 'localhost') + ':' +
-    (process.env.MONGO_PORT || '27017') +
-    '/mernproject'
+    process.env.MONGO_HOST 
 }
 
 export default config
